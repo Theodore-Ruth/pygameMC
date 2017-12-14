@@ -8,7 +8,7 @@ COAL = 3
 ROCK = 4
 LAVA = 5
 
-TILESIZE = 100
+TILESIZE = 20
 MAPWIDTH = 5
 MAPHEIGHT =5
 tilemap = [[GRASS, COAL, DIRT, DIRT, ROCK], [WATER, WATER, GRASS, LAVA, LAVA], [COAL, LAVA, ROCK, GRASS, WATER], [DIRT, GRASS, ROCK, COAL, COAL], [GRASS, WATER, LAVA, LAVA, DIRT]]
@@ -27,7 +27,7 @@ while True:
 	for event in pygame.event.get():
 		if event.type == QUIT:
 			pygame.quit()
-			sys.exit
+			sys.exit()
 	for row in range(MAPHEIGHT):
 		for column in range (MAPWIDTH):
 			DISPLAYSURF.blit(textures[tilemap[row][column]], (column * TILESIZE, row * TILESIZE))
