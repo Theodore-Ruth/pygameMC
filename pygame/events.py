@@ -57,7 +57,7 @@ while True:
 		print(event)
 		if event.type == QUIT:
 			pygame.quit()
-			sys.exit
+			sys.exit()
 		elif event.type == KEYDOWN:
 			if (event.key == K_RIGHT) and playerPos[0] < MAPWIDTH - 1:
 				playerPos[0] += 1
