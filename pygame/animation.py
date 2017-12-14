@@ -113,7 +113,7 @@ while True:
 	for event in pygame.event.get():
 		if event.type == QUIT:
 			pygame.quit()
-			sys.exit
+			sys.exit()
 			
 		#Waiting for the user to hit a key and reacts accordingly
 		elif event.type == KEYDOWN:
