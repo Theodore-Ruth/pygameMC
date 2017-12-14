@@ -52,7 +52,7 @@ while True:
 	for event in pygame.event.get():
 		if event.type == QUIT:
 			pygame.quit()
-			sys.exit
+			sys.exit()
 	for row in range(MAPHEIGHT):
 		for column in range (MAPWIDTH):
 			DISPLAYSURF.blit(textures[tilemap[row][column]], (column * TILESIZE, row * TILESIZE))
